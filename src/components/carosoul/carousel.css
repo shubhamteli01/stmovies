@@ -1,0 +1,273 @@
+.carousel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: black;
+}
+
+.carouselItem {
+    height: 48vh;
+    width: 9.5rem;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.carouselImage {
+    height: 78%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 14%;
+    background-color: black;
+}
+
+.posterLazyImg {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carouselItemTitle {
+    height: 8%;
+    width: 100%;
+    padding: 0px 2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+
+}
+
+.carouselItemDate {
+    height: 8%;
+    width: 100%;
+    padding: 0px 2%;
+    color: #737373;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+.carouselRighttNav {
+    right: 0;
+    right: 5px;
+}
+
+.carouselLeftNav {
+    left: 0;
+    left: 5px;
+}
+
+.circularRating {
+
+    width: 23%;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    z-index: 5;
+}
+
+
+
+.slider {
+    height: 100%;
+    width: 94%;
+    justify-content: space-evenly;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    width: 100%;
+}
+
+.loadingSkeleton {
+    height: 48vh;
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slick-slider .slick-track {
+    width: 100%;
+}
+
+.slick-slider .slick-prev {
+    left: -25px;
+}
+
+.slick-slider .slick-next {
+    right: -17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carouselItemTitle1 {
+    height: 8%;
+    width: 100%;
+    padding: 0px 2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+    background: #fff;
+    background-color: black;
+}
+
+.carouselItemDate1 {
+    height: 8%;
+    width: 100%;
+    padding: 0px 2%;
+    color: #737373;
+    background-color: black;
+}
+
+.carouselItem1 {
+    height: 48vh;
+    width: 9.5rem;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+
+}
+
+.carouselImage1::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #274d88 0%, rgba(0, 0, 0, 0.05) 20%, #274d88 40%, #274d88 100%);
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: shimmer 2s linear infinite;
+}
+
+.carouselImage1::before {
+    background-size: 650px 600px;
+}
+
+
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+
+    100% {
+        background-position: 450px 0;
+    }
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+    font-size: 30px;
+    top: 40%;
+    z-index: 5;
+}
+
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .carouselItem {
+        width: 20rem;
+        height: 63vh;
+    }
+
+    .carouselImage {
+        height: 87%;
+        padding-bottom: 7%;
+
+    }
+
+    .carouselItemTitle {
+        height: 5%;
+    }
+
+    .carouselItemDate {
+        height: 3%;
+    }
+
+    .carouselItem1 {
+        width: 20rem;
+        height: 63vh;
+
+    }
+
+    .circularRating {
+        bottom: 9%;
+    }
+
+    .slider .carousel-slider {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .slick-slider .slick-prev {
+        left: -20px;
+    }
+
+    .slick-slider .slick-next {
+        right: 0px;
+    }
+
+    .slick-slider .slick-prev:before,
+    .slick-slider .slick-next:before {
+        font-size: 40px;
+    }
+
+
+
+
+}

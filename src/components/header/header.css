@@ -1,0 +1,22 @@
+.headerPage {
+    height: 7vh;
+    background-color: #000000;
+    color: white;
+    margin: auto;
+    padding: 0 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerDiv {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerDiv span {
+    cursor: pointer;
+}

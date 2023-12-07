@@ -1,0 +1,32 @@
+.tabBox {
+    border-radius: 30px;
+    padding: 3px;
+    display: flex;
+    margin: 10px 0px;
+    background-color: white;
+}
+
+.active {
+    padding: 4px;
+    border-radius: 30px;
+    background-image: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+    color: white;
+    width: 4.5rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.updatedClass {
+    padding: 4px;
+    border-radius: 30px;
+    color: black;
+    width: 4.5rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

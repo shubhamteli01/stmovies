@@ -1,0 +1,54 @@
+.searchResultPage {
+    width: 100%;
+    background-color: black;
+}
+
+.searchResultContainer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 1% 10%;
+}
+
+.searchImage {
+    height: 84%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.searchItem {
+    height: 48vh;
+    width: 9rem;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.searchItemTitle {
+    height: 8%;
+    width: 100%;
+    padding: 1% 2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+}
+
+
+
+.searchTitleText {
+    color: white;
+    padding: 0 10%;
+    padding-top: 5%;
+}
+
+.infiniteScroll {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    justify-content: center;
+}

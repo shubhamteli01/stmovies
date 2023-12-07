@@ -1,0 +1,223 @@
+.detailsBanner {
+    width: 80%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: auto;
+}
+
+.detailsBanner_background_img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.width50 {
+    width: 40px;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.detailsBanner_lazyload {
+    width: 100%;
+    height: 100%;
+}
+
+.detailsBannerContent {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.detailsBannerContent_profile {
+    width: 25%;
+    margin: 3% 5% 3% 5%;
+    height: 80%;
+}
+
+.detailsBannerContent_profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailsBannerContent_text {
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+
+    width: 50%;
+}
+
+.detailsBannerContent_text_title {
+    font-size: 20px;
+}
+
+.detailsBannerContent_text_subitle {
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.detailsBannerContent_text_overview {
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.genresbox {
+    background-color: rgb(255 70 149);
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 1px 5px;
+    border: 0;
+    text-align: left;
+    margin-top: -15px;
+    height: 20%;
+}
+
+.whiteline {
+    height: 0.5px;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+}
+
+.playIcon {
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+}
+
+.playIconDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.playIconDiv :hover {
+    color: red;
+}
+
+.trailerBox {
+    position: absolute;
+    top: 21%;
+    width: 50%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.detail {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.detail::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(130deg,
+            #274d88 20%,
+            rgba(0, 0, 0, 0.05) 20%,
+            #274d88 40%,
+            #274d88 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: shimmer 2s linear infinite;
+}
+
+
+
+
+
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .detailsBanner {
+        min-height: 120vh;
+        width: 90%;
+    }
+
+    .detailsBannerContent {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .detailsBanner_background_img {
+        display: none;
+    }
+
+    .detailsBannerContent_profile {
+        width: 100%;
+        margin: auto;
+        height: 50%;
+    }
+
+    .detailsBannerContent_text {
+        width: 100%;
+        height: 50%;
+    }
+
+    .detailsBannerContent_text_title {
+        font-size: 25px;
+    }
+
+    .detailsBannerContent_text_overview {
+        min-height: 17%;
+        font-size: 13px;
+        overflow: hidden;
+    }
+
+    .playIcon {
+        height: 3.5rem;
+        width: 3.5rem;
+        cursor: pointer;
+    }
+
+    .ratingDiv {
+        width: 2.5rem;
+    }
+
+    .castItem {
+        height: 20vh;
+        width: 9rem;
+    }
+
+    .trailerBox {
+        position: absolute;
+        top: 18%;
+        width: 100%;
+        height: 22%;
+
+    }
+}

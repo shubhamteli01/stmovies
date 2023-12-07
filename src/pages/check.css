@@ -1,0 +1,78 @@
+.check {
+    border: 1px solid red;
+    margin: auto;
+    width: 700px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    height: 80%;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #0F2649;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    filter: blur(10px);
+    transform: scale(1.2);
+}
+
+.header .img {
+    height: 75px;
+    width: 75px;
+    background: #0F2649;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.description {
+    height: 25px;
+    width: 195px;
+    background: #0F2649;
+    margin-left: 5%;
+    position: relative;
+    overflow: hidden;
+    background-color: #0F2649;
+}
+
+
+
+
+.header .img::before,
+.description::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #274d88 0%, rgba(0, 0, 0, 0.05) 20%, #274d88 40%, #274d88 100%);
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: shimmer 2s linear infinite;
+}
+
+.header .img::before,
+.description::before {
+    background-size: 650px 600px;
+}
+
+
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+
+    100% {
+        background-position: 450px 0;
+    }
+}

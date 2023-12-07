@@ -1,0 +1,71 @@
+.footerPage {
+    height: 25vh;
+    background-color: rgb(129, 124, 124);
+    padding: 4% 3%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+.links {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.links :hover {
+    color: rgb(162, 162, 162);
+}
+
+.info {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    font-size: 14px;
+}
+
+.socialIcons {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.socialIcons :hover {
+    color: rgb(162, 162, 162);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .footerPage {
+        height: 20vh;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .links {
+        gap: 5%;
+    }
+
+    .socialIcons {
+        gap: 6%;
+    }
+}

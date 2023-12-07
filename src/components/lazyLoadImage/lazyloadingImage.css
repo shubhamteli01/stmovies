@@ -1,0 +1,22 @@
+.lazyImg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.lazyImg_img {
+    height: 100%;
+    width: 100%;
+}
+
+.lazyImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.lazyImg span {
+    height: 100%;
+    width: 100%;
+}

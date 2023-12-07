@@ -1,0 +1,150 @@
+.searchResultPage {
+    width: 100%;
+    background-color: black;
+}
+
+.searchResultContainer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+
+.titleBox {
+    display: flex;
+    align-items: center;
+    height: 5%;
+    padding: 0 10%;
+    padding-top: 2%;
+}
+
+.selectbox {
+    width: 84%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select {
+    min-width: 28%;
+    margin: 0 1%;
+}
+
+.searchImage {
+    height: 84%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.searchItem {
+    height: 48vh;
+    width: 9rem;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.searchItemTitle {
+    height: 8%;
+    width: 100%;
+    padding: 1% 2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+}
+
+
+.exploresearchTitleText {
+    color: white;
+    width: 15%;
+}
+
+
+.infiniteScroll {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    justify-content: center;
+    margin: auto;
+}
+
+.react-select-container .react-select__control {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background-color: rgb(34, 50, 168);
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    min-height: 30px;
+    font-size: 13px;
+}
+
+.react-select__value-container .react-select__placeholder {
+
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+
+}
+
+.react-select__value-container .react-select__input-container {
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+}
+
+.react-select__value-container .react-select__single-value {
+    color: rgb(255, 255, 255);
+}
+
+.react-select__value-container .react-select__multi-value {
+    background-color: rgb(168, 34, 146);
+    border-radius: 20px;
+}
+
+.react-select__value-container .react-select__multi-value__label {
+    color: white;
+}
+
+.react-select__value-container .react-select__multi-value__remove {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--black-lighter);
+    }
+}
+
+.css-wsp0cs-MultiValueGeneric {
+    font-size: 9px;
+    padding: 0px 1px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .titleBox {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        margin: auto;
+    }
+
+    .selectbox {
+        justify-content: flex-start;
+    }
+
+    .exploresearchTitleText {
+        margin-top: 2%;
+        width: 97%;
+    }
+
+    .selectbox {
+        width: 97%;
+        margin: 3% 0;
+    }
+}

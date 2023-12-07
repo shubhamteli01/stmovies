@@ -1,0 +1,30 @@
+.simileardiv {
+    width: 80%;
+    margin: auto
+}
+
+.couroselTitle {
+    color: white;
+    padding: 2% 0;
+}
+
+.Nodata {
+    font-weight: 500;
+    color: #878787;
+    font-size: 22px;
+    width: 100%;
+    /* color: white; */
+    text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .simileardiv {
+        width: 90%;
+        margin: auto
+    }
+
+    .couroselTitle {
+        padding: 5% 0;
+    }
+}
